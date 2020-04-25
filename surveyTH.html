@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Questionnaire</title>
+  <link rel="icon" href="image/survey2.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body background="image/question.jpg">
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(24, 68, 212);">
+    <a class="navbar-brand" href="survey.html">Questionnaire COVID-19</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="country.html">Check</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="survey.html">Survey<span class="sr-only">(current)</span></a>
+        </li>
+        </ul>
+      <spanclass="nav-item">
+            <a class="nav-link" href="survey.html">EN</a>
+      </span>
+    </div>
+  </nav>
+  
+      <div class="col mt-5 " style="text-align:left;">
+        <h3 class="display-7">แบบคัดกรองสอบถามโรคCOVID-19</h3>
+        <h6>*เราต้องการความช่วยเหลือจากคุณในการจัดทำแถลงการณ์ทางการแพทย์ที่ถูกต้องและเป็นจริงที่สุดเพื่อให้เราสามารถรักษาและป้องกันการแพร่กระจายของโรคได้อย่างมีประสิทธิภาพ</h6>
+        <h6>**กรุณากรอกตามความเป็นจริง</h6>
+        <form action="#" id="mainform" novalidate>
+          <div class="form-group">
+            <label for="">ข้อมูลส่วนตัว</label>
+            <div class="row">
+              <div class="col-2">
+                <input type="text" required name="fname" id="fname" class="form-control" placeholder="ชื่อ">
+                <div class="valid-feedback">
+                  ดีมาก
+                </div>
+                <div class="invalid-feedback">
+                  กรุณากรอกชื่อของคุณ
+                </div>
+              </div>
+              <div class="col-2">
+                <input type="text" required name="lname" id="lname" class="form-control" placeholder="นามสกุล" >
+                <div class="valid-feedback">
+                  ดีมาก
+                </div>
+                <div class="invalid-feedback">
+                  กรุณากรอกนามสกุลของคุณ
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-4">
+                <input type="text" required name="id" id="email" class="form-control" placeholder="เลขบัตรประจำตัวประชาชน" >
+                <div class="valid-feedback">
+                  ดีมาก
+                </div>
+                <div class="invalid-feedback">
+                  กรุณากรอกเลขบัตรประจำตัวประชาชนของคุณ
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-4">
+                <input type="text" required name="address" id="address" class="form-control" placeholder="ที่อยู่" >
+                <div class="valid-feedback">
+                  ดีมาก
+                </div>
+                <div class="invalid-feedback">
+                  กรุณากรอกที่อยู่ของคุณ
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-4">
+                <input type="text" pattern="[0-9]{3}-[0-9]{7}" required name="tel" id="tel" class="form-control"
+                  placeholder="เบอร์โทรศัพท์">
+                <div class="valid-feedback">
+                  ดีมาก
+                </div>
+                <div class="invalid-feedback">
+                  กรุณากรอกหมายเลขโทรศัท์ของคุณ
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+
+              <label for="" class="mt-3">
+                <h6>1.งานของคุณกำลังติดต่อกับนักท่องเที่ยวอย่างใกล้ชิด</h6>
+              </label>
+              <div class="row mt-1">
+                <div class="col">
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="work" id="yes1" value="checkedValue" checked>ใช่
+                    </label>
+                  </div>
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label" for="inlineCheckbox1">
+                      <input type="radio" class="form-check-input" name="work" id="no1" value="checkedValue" checked>ไม่เลย
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label for="" class="mt-3">
+                <h6>2.คุณมีอาการต่อไปนี้หรือไม่?</h6>
+              </label>
+              <div class="row mt-2">
+                <div class="col">
+                  <div class="form-check form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">ไข้</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">ไอ / เจ็บคอ</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">คัดจมูก</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">มีเสมหะ</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">หายใจลำบาก</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">ไม่มีอาการใดๆ</label>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label for="" class="mt-3">
+                <h6>3.ในช่วง 14 วันที่ผ่านมาคุณเดินทางหรือเดินทางจากประเทศตามด้านล่างหรือไม่ **กรุณาระบุ</h6>
+              </label>
+              <div class="row mt-2">
+                <div class="col">
+                  <div class="form-check form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">จีน</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">มาเก๊า</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">ฮ่องกง</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">เกาหลีใต้</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">อิตาลี</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">สหรัฐอเมริกา</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">อังกฤษ</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Other</label>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <label for="" class="mt-3">
+                <h6>4.คุณได้สัมผัสกับผู้ป่วยที่ติดเชื้อไวรัสโคโรนา 2019 หรืออยู่ระหว่างการตรวจสอบสำหรับ COVID-19</h6>
+              </label>
+              <div class="row mt-1">
+                <div class="col">
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="patient" id="yes2" value="checkedValue" checked>ใช่
+                    </label>
+                  </div>
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label" for="inlineCheckbox1">
+                      <input type="radio" class="form-check-input" name="patient" id="no2" value="checkedValue"checked>ไม่เลย
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label for="" class="mt-3">
+                <h6>5.คุณเป็นบุคลากรทางการแพทย์ที่ติดต่อกับผู้ป่วยภายใต้ invatigation fot COVID-19</h6>
+              </label>
+              <div class="row mt-1">
+                <div class="col">
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="healthcare" id="yes" value="checkedValue" checked>ใช่
+                    </label>
+                  </div>
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label" for="inlineCheckbox1">
+                      <input type="radio" class="form-check-input" name="healthcare" id="no" value="checkedValue"checked>ใม่เลย
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col">
+                  <button type="submit" class="btn btn-primary mt-2">ยืนยัน</button>
+                  <button type="reset" class="btn btn-primary mt-2">รีเซ็ต</button>
+                </div>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#mainform").submit(function (event) {
+        console.log("submited");
+        if ($("#mainform")[0].checkValidity() == false) {
+          event.preventDefault();
+        }
+        $("#mainform").addClass("was-validated");
+
+      });
+    })
+  </script>
+
+</body>
+
+</html>

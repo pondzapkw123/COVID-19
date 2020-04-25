@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Questionnaire</title>
+  <link rel="icon" href="image/survey2.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body background="image/question.jpg">
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(24, 68, 212);">
+    <a class="navbar-brand" href="survey.html">Questionnaire COVID-19</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="country.html">Check</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="survey.html">Survey</a>
+        </li>
+       </ul> 
+       <span class="nav-item" style="text-align: right;">
+        <a class="nav-link" href="surveyTH.html">TH</a>
+       </span>
+      </div>
+  </nav>
+  
+      <div class="col mt-5 " style="text-align:left;">
+        <h3 class="display-7">Screening Questionnaire COVID-19</h3>
+        <h6>*We need your help in providing the most accurate and truthful medical statement in order for us to treat  and prevent spreading of the disease effectively</h6>
+        <form action="#" id="mainform" novalidate>
+          <div class="form-group">
+            <label for="">Personal Info</label>
+            <div class="row">
+              <div class="col-5">
+                <input type="text" required name="fname" id="fname" class="form-control" placeholder="First name">
+                <div class="valid-feedback">
+                  Looks Good!
+                </div>
+                <div class="invalid-feedback">
+                  Please fill in your name
+                </div>
+              </div>
+              <div class="col-5">
+                <input type="text" required name="lname" id="lname" class="form-control" placeholder="Last name" >
+                <div class="valid-feedback">
+                  Looks Good!
+                </div>
+                <div class="invalid-feedback">
+                  Please fill in your lastname
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-6">
+                <input type="text" required name="id" id="email" class="form-control" placeholder="National ID" >
+                <div class="valid-feedback">
+                  Looks Good!
+                </div>
+                <div class="invalid-feedback">
+                  Please fill in your National ID
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-6">
+                <input type="text" required name="address" id="address" class="form-control" placeholder="Address" >
+                <div class="valid-feedback">
+                  Looks Good!
+                </div>
+                <div class="invalid-feedback">
+                  Please fill in your Address
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-6">
+                <input type="text" pattern="[0-9]{3}-[0-9]{7}" required name="tel" id="tel" class="form-control"
+                  placeholder="Mobile Number">
+                <div class="valid-feedback">
+                  Looks Good!
+                </div>
+                <div class="invalid-feedback">
+                  Please fill in your Mobile number
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+
+              <label for="" class="mt-3">
+                <h6>1. Your work was closely contacting with the traveler</h6>
+              </label>
+              <div class="row mt-1">
+                <div class="col">
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="work" id="yes1" value="checkedValue" checked>Yes
+                    </label>
+                  </div>
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label" for="inlineCheckbox1">
+                      <input type="radio" class="form-check-input" name="work" id="no1" value="checkedValue" checked>No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label for="" class="mt-3">
+                <h6>2. Do you currently have any of the following symptoms?</h6>
+              </label>
+              <div class="row mt-2">
+                <div class="col">
+                  <div class="form-check form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Fever</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Cough/Sore Throat</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Running Nose</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Phlegm</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Difficulty Breathing</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">No abnormal symptoms</label>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label for="" class="mt-3">
+                <h6>3. During last 14 day, have you travelled from or transited in any country*below? Please specify</h6>
+              </label>
+              <div class="row mt-2">
+                <div class="col">
+                  <div class="form-check form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">China</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Macao</label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Hong Kong</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">South Korea</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Italy</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">United state</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">England</label>
+                    </label>
+                  </div>
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Other</label>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <label for="" class="mt-3">
+                <h6>4. You have closely exposed to patient who confirmly infected by Corona virus 2019 or under investigation for COVID-19</h6>
+              </label>
+              <div class="row mt-1">
+                <div class="col">
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="patient" id="yes2" value="checkedValue"  checked>Yes
+                    </label>
+                  </div>
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="patient" id="no2" value="checkedValue"checked>No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label for="" class="mt-3">
+                <h6>5. You are healthcare personal who cantact with the patient under invatigation fot COVID-19</h6>
+              </label>
+              <div class="row mt-1">
+                <div class="col">
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="healthcare" id="yes" value="checkedValue" checked>Yes
+                    </label>
+                  </div>
+                  <div class="form-check- form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="healthcare" id="no" value="checkedValue" checked>No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col">
+                  <button type="submit" class="btn btn-primary mt-2">Confirm</button>
+                  <button type="reset" class="btn btn-primary mt-2">Reset</button>
+                </div>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#mainform").submit(function (event) {
+        console.log("submited");
+        if ($("#mainform")[0].checkValidity() == false) {
+          event.preventDefault();
+        }
+        $("#mainform").addClass("was-validated");
+
+      });
+    })
+  </script>
+
+</body>
+
+</html>
